@@ -116,7 +116,5 @@ numbersary = numbers.split("\n")
 
 sumary = 0
 
-numbersary.each do |i|
-  sumary += i.to_i
-end
+sumary = numbersary.map(&:to_i).sum
 p sumary
